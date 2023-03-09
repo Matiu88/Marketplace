@@ -60,8 +60,10 @@ function Card(props) {
             console.log(pay);
             const receipt = await pay.wait();
             if (receipt.confirmations > 0) {
-                setBought(pay);
+                
                 console.log(pay);
+                checkBought();
+
             }
         } else {
             console.log("Not enough Eth")
@@ -118,6 +120,9 @@ function Card(props) {
     return (
 
         <div className="card">
+
+            
+
             <div class="card__image-container">
                 <img
                     src={props.imageURL}
@@ -127,7 +132,7 @@ function Card(props) {
             </div>
             <div class="card__content">
                 <p class="card__title text--medium">
-                    {props.name}
+                    {props.name + props.id}
                 </p>
                 <div class="card__info">
                     <p class="text--medium">{props.description} </p>
@@ -149,14 +154,13 @@ function Card(props) {
                     <div>
                     <img onClick={payInUSDC} class="buyIcon" src="https://imgur.com/MQHRBrg.png" ></img>
                     <img onClick={payInUSDC} class="buyIcon" src="https://imgur.com/wndKTZS.png" ></img>
-                    <img onClick={payInETH}class="buyIcon" src="https://imgur.com/sQsv7UD.png" ></img>
+                    <img onClick={payInETH} class="buyIcon" src="https://imgur.com/sQsv7UD.png" ></img>
                 </div>
                
                 
 
                 <div>
-                    <p class="card__price text__price">
-                        $10</p>
+                    <p class="card__price text__price"> $10</p>
                         </div>
                         </div>
                                     
