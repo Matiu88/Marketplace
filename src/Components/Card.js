@@ -144,7 +144,7 @@ function Card(props) {
                     ///
                     <div>
                         <p class="card__price text__price">
-                            <a href="/Item1"> View your product</a> </p>
+                            <a href="\Item1"> View your product</a> </p>
 
                     </div>
 
@@ -152,9 +152,9 @@ function Card(props) {
 
                     <div>
                     <div>
-                    <img onClick={payInUSDC} class="buyIcon" src="https://imgur.com/MQHRBrg.png" ></img>
-                    <img onClick={payInUSDC} class="buyIcon" src="https://imgur.com/wndKTZS.png" ></img>
-                    <img onClick={payInETH} class="buyIcon" src="https://imgur.com/sQsv7UD.png" ></img>
+                    <img onClick={payInUSDC} class="buyIcon" src="https:\\imgur.com/MQHRBrg.png" ></img>
+                    <img onClick={payInUSDC} class="buyIcon" src="https:\\imgur.com/wndKTZS.png" ></img>
+                    <img onClick={payInETH} class="buyIcon" src="https:\\imgur.com/sQsv7UD.png" ></img>
                 </div>
                
                 
