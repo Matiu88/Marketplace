@@ -1,8 +1,8 @@
-
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
 import Homepage from "./Components/Homepage.js";
 import Products from "./Components/Products.js";
+import AboutUs from "./Components/AboutUs.js";
 import { ethers } from "ethers";
 import { useState, useEffect } from "react";
 
@@ -41,14 +41,14 @@ function App() {
           <header>
               <nav>
                   <div className="logo">
-                      <h1> <a href=""> Matiu's Toolbox </a></h1>
+                      <h1> <a href=""> Las Cripto Para Todos  </a></h1>
                   </div>
 
                   <ul>
-                      <li> <a href="./"> Home </a> </li>
-                      <li> <a href="/Products"> Products </a> </li>
+                      <li> <a href="/"> Inicio </a> </li>
+                      <li> <a href="/Products"> Cursos </a> </li>
                       
-                      <li className="nav-cta" onClick={getWalletAddress()}><a href=""> Connect </a></li>
+                      <li className="nav-cta" onClick={getWalletAddress}><a href=""> Conectar </a></li>
 
                   </ul>
 
@@ -60,6 +60,8 @@ function App() {
               <Routes>
                   <Route path="/" element={ <Homepage /> } />
                   <Route path="/Products" element={<Products />} />
+                  <Route path="/AboutUs" element={<AboutUs />} />
+
               </Routes>
           </Router>
           
